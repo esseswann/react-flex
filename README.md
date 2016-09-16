@@ -19,29 +19,29 @@ npm install react-flex-bool
 </Flex>
 ```
 ## Props
-  row:           { flexDirection: row }
-  rowReverse:    { flexDirection: row-reverse }
-  column:        { flexDirection: column }
-  columnReverse: { flexDirection: column-reverse }
-  hStart:        { justifyContent: flex-start }
-  hEnd:          { justifyContent: flex-end }
-  hCenter:       { justifyContent: center }
-  hBetween:      { justifyContent: space-between }
-  hAround:       { justifyContent: space-around }
-  vStretch:      { alignContent: stretch }
-  vCenter:       { alignContent: center }
-  vStart:        { alignContent: flex-start }
-  vEnd:          { alignContent: flex-end }
-  vBetween:      { alignContent: space-between }
-  vAround:       { alignContent: space-around }
-  itemStretch:   { alignItems: stretch }
-  itemCenter:    { alignItems: center }
-  itemStart:     { alignItems: flex-start }
-  itemEnd:       { alignItems: flex-end }
-  baseline:      { alignItems: baseline }
-  noWrap:        { flexWrap: nowrap }
-  wrap:          { flexWrap: wrap }
-  wrapReverse:   { flexWrap: wrap-reverse'}
+ - row:           { flexDirection: row }
+ - rowReverse:    { flexDirection: row-reverse }
+ - column:        { flexDirection: column }
+ - columnReverse: { flexDirection: column-reverse }
+ - hStart:        { justifyContent: flex-start }
+ - hEnd:          { justifyContent: flex-end }
+ - hCenter:       { justifyContent: center }
+ - hBetween:      { justifyContent: space-between }
+ - hAround:       { justifyContent: space-around }
+ - vStretch:      { alignContent: stretch }
+ - vCenter:       { alignContent: center }
+ - vStart:        { alignContent: flex-start }
+ - vEnd:          { alignContent: flex-end }
+ - vBetween:      { alignContent: space-between }
+ - vAround:       { alignContent: space-around }
+ - itemStretch:   { alignItems: stretch }
+ - itemCenter:    { alignItems: center }
+ - itemStart:     { alignItems: flex-start }
+ - itemEnd:       { alignItems: flex-end }
+ - baseline:      { alignItems: baseline }
+ - noWrap:        { flexWrap: nowrap }
+ - wrap:          { flexWrap: wrap }
+ - wrapReverse:   { flexWrap: wrap-reverse'}
 
 ## TODO
   - Throw error if multiple props from one property are present
