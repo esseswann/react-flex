@@ -1,0 +1,13 @@
+{
+  "preset":                                     "airbnb",
+  "fileExtensions":                             [".js", ".jsx"],
+  "disallowSemicolons":                         true,
+  "requireSemicolons":                          false,
+  "requireDollarBeforejQueryAssignment":        false,
+  "requireSpacesInAnonymousFunctionExpression": null,
+  "requireTrailingComma":                       false,
+  "requireSpacesInsideObjectBrackets":          false,
+  "maximumLineLength":                          200,
+  "validateLineBreaks":                         false,
+  "requireDotNotation":                         false
+}
