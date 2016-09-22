@@ -3,6 +3,8 @@ react-flex-bool
 
 Simple React component for creating flex nodes with only boolean props
 
+[![npm version](https://badge.fury.io/js/react-flex-bool.svg)](https://badge.fury.io/js/react-flex-bool)
+
 ## Installation
 ```sh
 npm install react-flex-bool
