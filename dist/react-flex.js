@@ -115,7 +115,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  });
 	  computedProps.style = Object.assign(computedProps.style || {}, style);
-	  console.log(computedProps);
 	  return computedProps;
 	};
 

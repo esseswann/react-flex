@@ -28,8 +28,8 @@ const properties = {
 }
 
 const computeProps = (props) => {
-  const computedProps = {}
-  const style = {display: 'flex'}
+  let computedProps = {}
+  let style         = { display: 'flex' }
 
   forEach(props, (prop, key) => {
       if (properties[key] !== undefined) {
