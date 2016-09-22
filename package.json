@@ -1,6 +1,6 @@
 {
   "name": "react-flex-bool",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple React component for creating flex nodes with only boolean props",
   "main": "dist/react-flex.js",
   "scripts": {
