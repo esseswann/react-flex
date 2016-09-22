@@ -18,6 +18,12 @@ npm install react-flex-bool
   vStretch>
   <div>My content</div>
   <div>Another content</div>
+  <Item
+    grow={2}
+    order={2}
+    onClick={() => alert('Hi!')}>
+    Content inside Item component
+  </Item
 </Flex>
 ```
 ## Props
@@ -49,4 +55,3 @@ npm install react-flex-bool
 
 ## TODO
   - Throw error if multiple props from one property are present
-  - Item component
