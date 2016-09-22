@@ -9,7 +9,7 @@ Simple React component for creating flex nodes with only boolean props
 ```sh
 npm install react-flex-bool
 ```
-Code is not minified! Use your own during project compilation
+Code is not minified! Use preferable minifier during project compilation
 
 ## Code Example
 
