@@ -48,4 +48,3 @@ npm install react-flex-bool
 ## TODO
   - Throw error if multiple props from one property are present
   - Item component
-  - Rule out lodash.merge for it's big
