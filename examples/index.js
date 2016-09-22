@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 
 const Title = ({attrs = [], styles = []}) =>
   <h3>
-    {'<'}<strong>Flex</strong> {attrs.map((attr) => <i>{attr} </i>)} >
+    {'<'}<strong>Flex</strong> {attrs.map((attr, j) => <i key={j}>{attr} </i>)} >
     {' = '}
     {styles.length === 0 ? 'default styles' : <span>{'{'} {styles.map((style) => style + '; ')}{'}'}</span>}
   </h3>
