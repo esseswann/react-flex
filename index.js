@@ -1,6 +1,5 @@
 import React from 'react'
 import forEach from 'lodash.forEach'
-import merge from 'lodash.merge'
 
 const properties = {
   row:           ['flexDirection',  'row'],
@@ -40,7 +39,7 @@ const computeProps = (props) => {
       }
     }
   )
-  computedProps.style = merge(computedProps.style, style)
+  computedProps.style = Object.assign(computedProps.style || {}, style)
   return computedProps
 }
 
