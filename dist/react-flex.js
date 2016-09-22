@@ -7,7 +7,7 @@
 		exports["react-flex"] = factory(require("react"));
 	else
 		root["react-flex"] = factory(root["React"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_2__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_3__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -66,12 +66,37 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.Item = exports.Flex = undefined;
 
-	var _react = __webpack_require__(2);
+	var _Flex2 = __webpack_require__(2);
+
+	var _Flex3 = _interopRequireDefault(_Flex2);
+
+	var _Item2 = __webpack_require__(5);
+
+	var _Item3 = _interopRequireDefault(_Item2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Flex = exports.Flex = _Flex3.default;
+	var Item = exports.Item = _Item3.default;
+	exports.default = Flex;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _lodash = __webpack_require__(3);
+	var _lodash = __webpack_require__(4);
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -150,13 +175,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = Flex;
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports) {
 
-	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -721,6 +746,63 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	module.exports = forEach;
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(3);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _lodash = __webpack_require__(4);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var properties = {
+	  grow: 'flexGrow',
+	  shrink: 'flexShrink',
+	  basis: 'flexBasis',
+	  align: 'alignSelf',
+	  order: 'order'
+	};
+
+	var computeProps = function computeProps(props) {
+	  var computedProps = {};
+	  computedProps.style = props.style || {};
+
+	  (0, _lodash2.default)(props, function (prop, key) {
+	    if (properties[key] !== undefined) {
+	      computedProps.style[properties[key]] = prop;
+	    } else {
+	      computedProps[key] = prop;
+	    }
+	  });
+
+	  return computedProps;
+	};
+
+	var Item = function Item(props) {
+	  return _react2.default.createElement('div', computeProps(props));
+	};
+
+	Item.propTypes = {
+	  grow: _react2.default.PropTypes.number,
+	  shrink: _react2.default.PropTypes.number,
+	  basis: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
+	  align: _react2.default.PropTypes.oneOf(['auto', 'stretch', 'center', 'flex-start', 'flex-end', 'baseline', 'initial', 'inherit']),
+	  order: _react2.default.PropTypes.number
+	};
+
+	exports.default = Item;
 
 /***/ }
 /******/ ])

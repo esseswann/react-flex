@@ -1,5 +1,5 @@
 import React from 'react'
-import Flex from '../dist/react-flex'
+import { Flex, Item } from '../dist/react-flex'
 import { render } from 'react-dom'
 
 const Title = ({attrs = [], styles = []}) =>
@@ -39,10 +39,22 @@ const Example = () =>
       </Flex>
     </div>
     <Title attrs={['hBetween', 'rowReverse', 'onClick = {() => alert("Hi!")}']} styles={['justify-content: space-between', 'flex-direction: row-reverse']} />
-
     <div className = 'block'>
       <Flex hBetween rowReverse onClick={() => alert('Hi!')}>
         <div>Slaanesh</div>
+        <div>Tzeentch</div>
+        <div>Kharn</div>
+        <div>Nurgle</div>
+      </Flex>
+    </div>
+    <Title/>
+    <div className = 'block'>
+      <Flex >
+        <Item
+          grow  = {2}
+          order = {2}>
+          {'<Item grow={2} order={2}/>'}
+        </Item>
         <div>Tzeentch</div>
         <div>Kharn</div>
         <div>Nurgle</div>
