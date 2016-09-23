@@ -28,7 +28,9 @@ Code is not minified! Use preferable minifier during project compilation
   </Item>
 </Flex>
 ```
-## Props
+Note that Flex and Item can receive common props
+
+## Flex props
 | CSS Property | CSS Value | Boolean prop |
 | --- | --- | --- |
 | flex-direction | row | row |
@@ -54,6 +56,16 @@ Code is not minified! Use preferable minifier during project compilation
 | flex-wrap | nowrap | noWrap |
 | flex-wrap | wrap | wrap |
 | flex-wrap | wrap-reverse | wrapReverse |
+
+# Item props
+
+| CSS Property | Prop | PropType |
+| --- | --- | --- |
+| flex-grow | grow | number |
+| flex-shrink | shrink | number |
+| flex-basis | basis | string or number |
+| align-self | align | enum |
+| order | order | number |
 
 ## TODO
   - Throw error if multiple props from one property are present
