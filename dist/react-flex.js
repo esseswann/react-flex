@@ -134,7 +134,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  (0, _lodash2.default)(props, function (prop, key) {
 	    if (properties[key] !== undefined) {
-	      style[properties[key][0]] = properties[key][1];
+	      if (prop != false) style[properties[key][0]] = properties[key][1];
 	    } else {
 	      computedProps[key] = prop;
 	    }
@@ -186,7 +186,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/**
 	 * lodash (Custom Build) <https://lodash.com/>
