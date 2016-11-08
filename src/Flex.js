@@ -33,7 +33,8 @@ const computeProps = (props) => {
 
   forEach(props, (prop, key) => {
       if (properties[key] !== undefined) {
-        style[properties[key][0]] = properties[key][1]
+        if (prop != false)
+          style[properties[key][0]] = properties[key][1]
       } else {
         computedProps[key] = prop
       }
