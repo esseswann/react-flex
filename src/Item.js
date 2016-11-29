@@ -6,7 +6,8 @@ const properties = {
   shrink: 'flexShrink',
   basis:  'flexBasis',
   align:  'alignSelf',
-  order:  'order'
+  order:  'order',
+  flex:   'flex'
 }
 
 const computeProps = (props) => {
@@ -42,7 +43,8 @@ Item.propTypes = {
             'baseline',
             'initial',
             'inherit']),
-  order:  React.PropTypes.number
+  order:  React.PropTypes.number,
+  flex:   React.PropTypes.string
 }
 
 export default Item
