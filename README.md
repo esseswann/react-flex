@@ -66,6 +66,7 @@ Note that Flex and Item can receive common props
 | flex-basis | basis | string or number |
 | align-self | align | enum |
 | order | order | number |
+| flex | flex | string |
 
 ## TODO
   - Throw error if multiple props from one property are present
