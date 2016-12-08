@@ -70,3 +70,6 @@ Note that Flex and Item can receive common props
 
 ## TODO
   - Throw error if multiple props from one property are present
+  - Make ItemFlex component receiving both kinds of props
+
+PRs are welcome
