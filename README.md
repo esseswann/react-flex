@@ -1,3 +1,8 @@
+DEPRECATION NOTICE
+====================
+You should use any css-in-js solution instead
+
+
 react-flex-bool
 ====================
 
